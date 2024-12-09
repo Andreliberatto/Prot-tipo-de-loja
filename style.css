@@ -1,0 +1,196 @@
+/* Reseta margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #80cfff; /* Azul Bebê */
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .logo h1 {
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Seção de Produtos */
+.produtos {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.produtos h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.produtos-lista {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.produto img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.produto h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.produto .preco {
+  font-size: 16px;
+  color: #2e2e2e;
+  margin-bottom: 15px;
+}
+
+/* Modal de Detalhes do Produto */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-conteudo {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10% auto;
+  width: 60%;
+  text-align: center;
+}
+
+.fechar {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fechar:hover {
+  color: #f00;
+}
+
+/* Seção de Comentários */
+.comentarios {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comentario {
+  margin-bottom: 15px;
+}
+
+.comentario h4 {
+  font-size: 18px;
+  color: #333;
+}
+
+.comentario p {
+  color: #666;
+}
+
+/* Seção de Contato */
+.contato {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contato label {
+  font-size: 14px;
+  color: #333;
+}
+
+.contato input, .contato textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contato button {
+  background-color: #80cfff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contato button:hover {
+  background-color: #69b8e2;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}

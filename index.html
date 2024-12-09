@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loja Eletronica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Loja Eletrônicos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#comentarios">Comentários</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Produtos em Destaque</h2>
+        <div class="produtos-lista">
+            <div class="produto" onclick="mostrarDetalhes(1)">
+                <img src="img/smartphone.jpg" alt="Produto 1">
+                <h3>Smartphone XYZ</h3>
+                <p class="preco">R$ 2.499,00</p>
+            </div>
+            <div class="produto" onclick="mostrarDetalhes(2)">
+                <img src="img/laptop.jpg" alt="Produto 2">
+                <h3>Notebook ABC</h3>
+                <p class="preco">R$ 3.899,00</p>
+            </div>
+            <div class="produto" onclick="mostrarDetalhes(3)">
+                <img src="img/headphones.jpg" alt="Produto 3">
+                <h3>Fone de Ouvido JBL</h3>
+                <p class="preco">R$ 399,00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalhes do Produto (Modal) -->
+    <div id="detalhesProduto" class="modal" onclick="fecharDetalhes()">
+        <div class="modal-conteudo" onclick="event.stopPropagation()">
+            <span class="fechar" onclick="fecharDetalhes()">&times;</span>
+            <h2 id="tituloProdutoModal"></h2>
+            <p id="descricaoProdutoModal"></p>
+            <p id="precoProdutoModal"></p>
+        </div>
+    </div>
+
+    <!-- Seção de Comentários -->
+    <section id="comentarios" class="comentarios">
+        <h2>Comentários</h2>
+        <div class="comentario">
+            <h4>João </h4>
+            <p>Produto excelente! Super recomendo.</p>
+        </div>
+        <div class="comentario">
+            <h4>Ana  </h4>
+            <p>Ótimo custo-benefício, gostei bastante.</p>
+        </div>
+        <div class="comentario">
+            <h4>Pedro </h4>
+            <p>Entrega rápida e produto de qualidade.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2020 Loja Eletrônicos. Todos os direitos reservados (André A Liberatto).</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
