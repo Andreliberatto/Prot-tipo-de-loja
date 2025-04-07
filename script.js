@@ -1,4 +1,4 @@
-// Dados dos produtos
+
 const produtos = [
     {
         id: 1,
@@ -20,7 +20,6 @@ const produtos = [
     }
 ];
 
-// Função para mostrar os detalhes do produto no modal
 function mostrarDetalhes(idProduto) {
     const produto = produtos.find(p => p.id === idProduto);
     
@@ -31,7 +30,6 @@ function mostrarDetalhes(idProduto) {
     document.getElementById('detalhesProduto').style.display = 'block';
 }
 
-// Função para fechar o modal
 function fecharDetalhes() {
     document.getElementById('detalhesProduto').style.display = 'none';
 }
