@@ -1,18 +1,18 @@
-/* Reseta margens e paddings padrão */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo geral */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
 
-/* Cabeçalho */
+
 header {
   background-color: #80cfff; /* Azul Bebê */
   color: #fff;
@@ -41,7 +41,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Seção de Produtos */
+
 .produtos {
   background-color: #f8f8f8;
   padding: 20px;
@@ -89,7 +89,6 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-/* Modal de Detalhes do Produto */
 .modal {
   display: none;
   position: fixed;
@@ -123,7 +122,6 @@ nav a:hover {
   color: #f00;
 }
 
-/* Seção de Comentários */
 .comentarios {
   background-color: #fff;
   padding: 20px;
@@ -145,7 +143,7 @@ nav a:hover {
   color: #666;
 }
 
-/* Seção de Contato */
+
 .contato {
   background-color: #fff;
   padding: 20px;
